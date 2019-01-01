@@ -1,0 +1,33 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/akka_2.11-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	strings$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/strings$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestartException.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/RestartException.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	child.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/child.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	parent.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/parent.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	strings.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/strings.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	child$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/child$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	parent$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/parent$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	supervision.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/supervision.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	supervision$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/supervision$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ResumeException.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/ResumeException.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	supervision$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/supervision$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	startchild$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/startchild$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StopException.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/StopException.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	parent$$anonfun$receive$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/parent$$anonfun$receive$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	startchild.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/supervision/target/scala-2.11/classes/startchild.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

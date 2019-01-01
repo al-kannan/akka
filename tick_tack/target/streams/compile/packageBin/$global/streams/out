@@ -1,0 +1,35 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/akka_2.11-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	strings.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/strings.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StartTimerTask$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/StartTimerTask$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	strings$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/strings$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ticktack$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/ticktack$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ticktackschedule.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/ticktackschedule.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tickchild$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/tickchild$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StartTimerTask.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/StartTimerTask.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ticktackschedule$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/ticktackschedule$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Tick$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/Tick$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	child$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/child$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	child.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/child.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Tick.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/Tick.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ticktack$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/ticktack$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ticktack.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/ticktack.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tickchild.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/tickchild.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ticktackschedule$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/tick_tack/target/scala-2.11/classes/ticktackschedule$delayedInit$body.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

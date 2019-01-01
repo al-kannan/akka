@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/hadoop/sbt_workspace/akka/parent_child/src/main/scala/parentchild.scala:18:62: missing parameter type for expanded function ((x$1) => "Welcome to Sub Child".<$plus: error>(x$1))[0m
+[0m[[0m[31merror[0m] [0m[0m	def receive = { case _  => println("Welcome to Sub Child" + _) }[0m
+[0m[[0m[31merror[0m] [0m[0m	                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

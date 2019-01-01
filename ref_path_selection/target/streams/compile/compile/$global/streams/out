@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/hadoop/sbt_workspace/akka/ref_path_selection/src/main/scala/refpathselection.scala:9:20: wrong number of arguments for pattern relativepath(Msg: String)[0m
+[0m[[0m[31merror[0m] [0m[0m		case relativepath() => {[0m
+[0m[[0m[31merror[0m] [0m[0m		                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

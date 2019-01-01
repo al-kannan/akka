@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/hadoop/sbt_workspace/akka/fsm/src/main/scala/fsm.scala:26:41: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: Actor.this.State[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  akka.actor.FSM.State[ActorStatus,Data][0m
+[0m[[0m[31merror[0m] [0m[0m    case Event(NewEvent, _) => { println("New Event") }[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

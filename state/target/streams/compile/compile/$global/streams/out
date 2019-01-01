@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/hadoop/sbt_workspace/akka/state/src/main/scala/state.scala:26:2: not found: value actorref2[0m
+[0m[[0m[31merror[0m] [0m[0m	actorref2 = system.actorOf(Props[state], "state2")[0m
+[0m[[0m[31merror[0m] [0m[0m	^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/hadoop/sbt_workspace/akka/state/src/main/scala/state.scala:31:2: not found: value actorref2[0m
+[0m[[0m[31merror[0m] [0m[0m	actorref2 ! PoisonPill[0m
+[0m[[0m[31merror[0m] [0m[0m	^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

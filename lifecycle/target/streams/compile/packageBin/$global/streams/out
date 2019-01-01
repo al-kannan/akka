@@ -1,0 +1,15 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hadoop/sbt_workspace/akka/lifecycle/target/scala-2.11/akka_2.11-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ForceRestart.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/lifecycle/target/scala-2.11/classes/ForceRestart.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	lifecycle.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/lifecycle/target/scala-2.11/classes/lifecycle.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ForceRestart$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/lifecycle/target/scala-2.11/classes/ForceRestart$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	lifecycle$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/lifecycle/target/scala-2.11/classes/lifecycle$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	lifecycle$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/lifecycle/target/scala-2.11/classes/lifecycle$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	lifecycle$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/lifecycle/target/scala-2.11/classes/lifecycle$delayedInit$body.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

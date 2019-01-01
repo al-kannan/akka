@@ -1,0 +1,19 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hadoop/sbt_workspace/akka/ref_path_selection/target/scala-2.11/akka_2.11-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	refpathselection$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/ref_path_selection/target/scala-2.11/classes/refpathselection$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	refpathselection$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/ref_path_selection/target/scala-2.11/classes/refpathselection$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	refpathselection$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/ref_path_selection/target/scala-2.11/classes/refpathselection$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	relativepath$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/ref_path_selection/target/scala-2.11/classes/relativepath$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	hello$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/ref_path_selection/target/scala-2.11/classes/hello$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	relativepath.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/ref_path_selection/target/scala-2.11/classes/relativepath.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	hello.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/ref_path_selection/target/scala-2.11/classes/hello.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	refpathselection.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/ref_path_selection/target/scala-2.11/classes/refpathselection.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

@@ -1,0 +1,25 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hadoop/sbt_workspace/akka/parent_child/target/scala-2.11/akka_2.11-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	state.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/parent_child/target/scala-2.11/classes/state.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	strings.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/parent_child/target/scala-2.11/classes/strings.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	state$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/parent_child/target/scala-2.11/classes/state$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	child$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/parent_child/target/scala-2.11/classes/child$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	state$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/parent_child/target/scala-2.11/classes/state$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	create_subchild.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/parent_child/target/scala-2.11/classes/create_subchild.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	strings$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/parent_child/target/scala-2.11/classes/strings$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	child.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/parent_child/target/scala-2.11/classes/child.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	subchild.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/parent_child/target/scala-2.11/classes/subchild.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	create_subchild$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/parent_child/target/scala-2.11/classes/create_subchild$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	subchild$$anonfun$receive$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/parent_child/target/scala-2.11/classes/subchild$$anonfun$receive$2.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
