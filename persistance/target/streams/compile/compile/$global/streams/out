@@ -1,9 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/hadoop/sbt_workspace/akka/persistance/src/main/scala/persistence.scala:11:8: patterns after a variable pattern cannot match (SLS 8.1.1)[0m
-[0m[[0m[33mwarn[0m] [0m[0mIf you intended to match against object current_state in package <empty>, you must use backticks, like: case `current_state` =>[0m
-[0m[[0m[33mwarn[0m] [0m[0m		case current_state  => [0m
-[0m[[0m[33mwarn[0m] [0m[0m		     ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/hadoop/sbt_workspace/akka/persistance/src/main/scala/persistence.scala:17:4: unreachable code due to variable pattern 'current_state' on line 11[0m
-[0m[[0m[33mwarn[0m] [0m[0mIf you intended to match against object throw_error in package <empty>, you must use backticks, like: case `throw_error` =>[0m
-[0m[[0m[33mwarn[0m] [0m[0m			throw new Exception[0m
-[0m[[0m[33mwarn[0m] [0m[0m			^[0m
-[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/hadoop/sbt_workspace/akka/akka/persistance/src/main/scala/persistence.scala:36:11: not found: value snapShotInterval[0m
+[0m[[0m[31merror[0m] [0m[0m		println(snapShotInterval)[0m
+[0m[[0m[31merror[0m] [0m[0m		        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

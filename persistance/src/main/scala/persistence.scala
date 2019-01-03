@@ -1,22 +1,22 @@
 import akka.actor._
-
-case object current_state
-case object throw_error
-case object shut_down
+import akka.persistence._
 
 case class Evt(data: Int)
-case class Cmd(data: String)
+case class Cmd(data: Int)
 
 class state extends PersistentActor {
 	var state_counter = 0
 	println("While starting " + state_counter)
+
 	override def persistenceId = "demo-persistance-actor-1"
 
 	def updateState(event: Evt): Unit =
-	    state_counter = state_counter + event;
+	    state_counter = state_counter + event.data;
 
 	val receiveRecover: Receive = {
-	    case evt: Evt => updateState(evt)
+	    case evt: Evt => 
+	    	println("Recover value : " + evt.data)
+	    	updateState(evt)
 	    case SnapshotOffer(_, snapshot: Int) => {
 		println(s"offered state = $snapshot")
 		state_counter = snapshot
@@ -25,33 +25,18 @@ class state extends PersistentActor {
 
 	val receiveCommand: Receive = {
 	    case Cmd(data) =>
-	      persist(Evt(data))(updateState)
-	      persist(Evt(s"${data}-${numEvents + 1}")) { event =>
+	      persist(Evt(data)) { event =>
 		updateState(event)
-		context.system.eventStream.publish(event)
+		println("Stored Command Count : " + lastSequenceNr) 
 	      }
-	    case "snap"  => saveSnapshot(state)
+	    case "snap"  => saveSnapshot(state_counter)
 	    case SaveSnapshotSuccess(metadata) =>
 	      println(s"SaveSnapshotSuccess(metadata) :  metadata=$metadata")
 	    case SaveSnapshotFailure(metadata, reason) =>
-	      println("""SaveSnapshotFailure(metadata, reason) :
-		metadata=$metadata, reason=$reason""")
-	    case "print" => println(state)
+	      println(s"SaveSnapshotFailure(metadata) :  metadata=$metadata reason=$reason")
+	    case "print" => println(state_counter)
 	    case "boom"  => throw new Exception("boom")
 	  }
-
-
-	def receive = { 
-		case `current_state`  => 
-			{
-			println("Current State " + state_counter) 
-			state_counter += 1
-			}
-		case `throw_error`  => 
-			throw new Exception
-		case `shut_down`  => 
-			context.stop(self)
-		}
 }
 
 object state extends App {
@@ -60,19 +45,17 @@ object state extends App {
 
 	val actorref1 = system.actorOf(Props[state], "state1")
 
-	actorref1 ! current_state
-	actorref1 ! current_state
-	actorref1 ! current_state
-	actorref1 ! current_state
-	actorref1 ! current_state
+	actorref1 ! "print"
 
-	actorref1 ! throw_error
+	actorref1 ! Cmd(1)
+
+	actorref1 ! "print"
+
+	actorref1 ! "boom"
+
+	actorref1 ! "snap"
 
 	Thread.sleep(2000)
-
-	actorref1 ! current_state
-
-	actorref1 ! shut_down
 
 	system.terminate
 }

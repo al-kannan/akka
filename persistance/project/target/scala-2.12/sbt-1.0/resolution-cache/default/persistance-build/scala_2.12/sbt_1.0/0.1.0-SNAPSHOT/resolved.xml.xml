@@ -4,7 +4,7 @@
 		module="persistance-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20181231151444"
+		publication="20190103164653"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

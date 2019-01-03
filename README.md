@@ -75,4 +75,20 @@ This example shows
 - Scheduler can also be used, but Timers is preferred
 - PoisonPill will stop the cycle
 
+### Persistence
+This is little bit tricky, if you under the trick it is no big deal
+- The key point to understand is AKKA is persisting commands
+- It persisting not only upon failure but also on regular shutdown and restart!!
+- On each start it looks at the journal and plays all the commands to get to the right state (if you have any external variables, this could be a problem in logic, if it is a pure function with no side effects then this is okay)
+- By storing commands we control what comands to be stored
+- Journal holds all the commands, if you take a snapshot then Journal is only played from the snapshot point forward
+
+- I created a simple example where my state is an Int variable
+- I send a command to store value of 1, this gets persisted in the journal and gets applied to the state variable
+- I also send a snap message to take a snapshot of my simple Int varibale, this can be complex object with function and struct data type with name=value pair
+- When the actor fails, upon restart it recovers  
+- When the actor is shutdown due to system shut down and when it comes back it recovers
+
+
+
 

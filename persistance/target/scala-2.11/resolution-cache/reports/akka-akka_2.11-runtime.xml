@@ -7,40 +7,76 @@
 		revision="1.0"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20181231161551"/>
+		date="20190103173321"/>
 	<dependencies>
+		<module organisation="org.iq80.leveldb" name="leveldb">
+			<revision name="0.7" status="release" pubdate="20140206041603" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="9240" time="72" location="/root/.ivy2/cache/org.iq80.leveldb/leveldb/ivy-0.7.xml" searched="true" original-local-location="/root/.ivy2/cache/org.iq80.leveldb/leveldb/ivy-0.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/iq80/leveldb/leveldb/0.7/leveldb-0.7.pom"/>
+				<caller organisation="akka" name="akka_2.11" conf="compile, runtime" rev="0.7" rev-constraint-default="0.7" rev-constraint-dynamic="0.7" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="leveldb" type="jar" ext="jar" status="successful" details="" size="229619" time="314" location="/root/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/iq80/leveldb/leveldb/0.7/leveldb-0.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="16.0.1" status="release" pubdate="20140203224528" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="6102" time="53" location="/root/.ivy2/cache/com.google.guava/guava/ivy-16.0.1.xml" searched="true" original-local-location="/root/.ivy2/cache/com.google.guava/guava/ivy-16.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom"/>
+				<caller organisation="org.iq80.leveldb" name="leveldb" conf="default, compile, runtime, master" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="0.7"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="successful" details="" size="2228009" time="390" location="/root/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.iq80.leveldb" name="leveldb-api">
+			<revision name="0.7" status="release" pubdate="20140206041442" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="649" time="53" location="/root/.ivy2/cache/org.iq80.leveldb/leveldb-api/ivy-0.7.xml" searched="true" original-local-location="/root/.ivy2/cache/org.iq80.leveldb/leveldb-api/ivy-0.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/iq80/leveldb/leveldb-api/0.7/leveldb-api-0.7.pom"/>
+				<caller organisation="org.iq80.leveldb" name="leveldb" conf="default, compile, runtime, master" rev="0.7" rev-constraint-default="0.7" rev-constraint-dynamic="0.7" callerrev="0.7"/>
+				<artifacts>
+					<artifact name="leveldb-api" type="jar" ext="jar" status="successful" details="" size="9236" time="77" location="/root/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/iq80/leveldb/leveldb-api/0.7/leveldb-api-0.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.typesafe.akka" name="akka-persistence_2.11">
-			<revision name="2.5.19" status="release" pubdate="20181207114444" resolver="public" artresolver="public" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.19" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+			<revision name="2.5.19" status="release" pubdate="20181207114444" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.19" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="successful" details="" size="3906" time="160" location="/root/.ivy2/cache/com.typesafe.akka/akka-persistence_2.11/ivy-2.5.19.xml" searched="true" original-local-location="/root/.ivy2/cache/com.typesafe.akka/akka-persistence_2.11/ivy-2.5.19.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-persistence_2.11/2.5.19/akka-persistence_2.11-2.5.19.pom"/>
+				<metadata-artifact status="no" details="" size="4158" time="0" location="/root/.ivy2/cache/com.typesafe.akka/akka-persistence_2.11/ivy-2.5.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-persistence_2.11/2.5.19/akka-persistence_2.11-2.5.19.pom"/>
 				<caller organisation="akka" name="akka_2.11" conf="compile, runtime" rev="2.5.19" rev-constraint-default="2.5.19" rev-constraint-dynamic="2.5.19" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="akka-persistence_2.11" type="jar" ext="jar" status="successful" details="" size="1068997" time="383" location="/root/.ivy2/cache/com.typesafe.akka/akka-persistence_2.11/jars/akka-persistence_2.11-2.5.19.jar">
+					<artifact name="akka-persistence_2.11" type="jar" ext="jar" status="no" details="" size="1068997" time="0" location="/root/.ivy2/cache/com.typesafe.akka/akka-persistence_2.11/jars/akka-persistence_2.11-2.5.19.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-persistence_2.11/2.5.19/akka-persistence_2.11-2.5.19.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="com.typesafe.akka" name="akka-protobuf_2.11">
-			<revision name="2.5.19" status="release" pubdate="20181207114105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.19" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
-				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="no" details="" size="2811" time="0" location="/root/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.11/ivy-2.5.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.11/2.5.19/akka-protobuf_2.11-2.5.19.pom"/>
-				<caller organisation="com.typesafe.akka" name="akka-persistence_2.11" conf="default, compile, runtime, master" rev="2.5.19" rev-constraint-default="2.5.19" rev-constraint-dynamic="2.5.19" callerrev="2.5.19"/>
-				<artifacts>
-					<artifact name="akka-protobuf_2.11" type="jar" ext="jar" status="no" details="" size="483843" time="0" location="/root/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.11/jars/akka-protobuf_2.11-2.5.19.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.11/2.5.19/akka-protobuf_2.11-2.5.19.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="org.fusesource.leveldbjni" name="leveldbjni-all">
-			<revision name="1.8" status="release" pubdate="20131017131826" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+			<revision name="1.8" status="release" pubdate="20131017131826" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
 				<license name="The BSD 3-Clause License" url="http://www.opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="4642" time="0" location="/root/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/ivy-1.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.pom"/>
 				<caller organisation="akka" name="akka_2.11" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="leveldbjni-all" type="bundle" ext="jar" status="no" details="" size="1045744" time="0" location="/root/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.8.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-protobuf_2.11">
+			<revision name="2.5.19" status="release" pubdate="20181207114105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.19" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2811" time="0" location="/root/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.11/ivy-2.5.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.11/2.5.19/akka-protobuf_2.11-2.5.19.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-persistence_2.11" conf="default, compile, runtime, master" rev="2.5.19" rev-constraint-default="2.5.19" rev-constraint-dynamic="2.5.19" callerrev="2.5.19"/>
+				<artifacts>
+					<artifact name="akka-protobuf_2.11" type="jar" ext="jar" status="no" details="" size="483843" time="0" location="/root/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.11/jars/akka-protobuf_2.11-2.5.19.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.11/2.5.19/akka-protobuf_2.11-2.5.19.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
