@@ -95,6 +95,7 @@ In this example:
 Concept is actors need actor system and there can multiple actor systems with different name
 These different actor systems need to run on separate port if it runs on same physical machine or if it runs on two different physical machine then port can be same
 Once you have two or more actor systems and YOU KNOW the remote actor address(full path) then you use actor selection and get a ref handle, using ref handle you can send messages
+Sysem Name can be same if it runs in two different ports
 
 In this example:
 I have created two sections in Application.conf file
