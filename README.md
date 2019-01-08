@@ -91,4 +91,15 @@ In this example:
 - When the actor is shutdown due to system shut down even tnen it recovers
 
 
+### Remoting
+Concept is actors need actor system and there can multiple actor systems with different name
+These different actor systems need to run on separate port if it runs on same physical machine or if it runs on two different physical machine then port can be same
+Once you have two or more actor systems and YOU KNOW the remote actor address(full path) then you use actor selection and get a ref handle, using ref handle you can send messages
+
+In this example:
+I have created two sections in Application.conf file
+Create two systems using diff conf sections with different port number
+First system has one actor
+Second system know the full path of the first system and actor name, using this I have send an message and it worked 
+
 
