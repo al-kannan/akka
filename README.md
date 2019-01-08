@@ -101,8 +101,21 @@ In order for an actor to send message to another actor, the actor sending the me
 
 In this example:
 I have created two sections in Application.conf file
-Create two systems using diff conf sections with different port number
+
+Create two systems using different configuration sections with different port numbers
+
 First system has one actor
+
 Second system know the full path of the first system and actor name, using this I have send an message and it worked 
+
+I also tried with 127.0.0.1 address and AWS EC2 local IP address, it worked
+
+I also tried deploying the same code to new physical server with two different local IP, it worked, no difference
+
+I also tried with same system name, made no difference
+
+Finally I tried to connect two nodes to a third node, third node received messages from both, all had the same actor system name
+
+
 
 
