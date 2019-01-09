@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/hadoop/sbt_workspace/akka/akka/remote_actor_communication/system2/src/main/scala/remoting.scala:34:13: not found: value Work[0m
+[0m[[0m[31merror[0m] [0m[0m	actorref ! Work("This is from second actor system")[0m
+[0m[[0m[31merror[0m] [0m[0m	           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -1,7 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/home/hadoop/sbt_workspace/akka/akka/remoting/src/main/scala/remoting.scala:44:47: value path in class ActorSelection cannot be accessed in akka.actor.ActorSelection[0m
-[0m[[0m[31merror[0m] [0m[0m Access to protected value path not permitted because[0m
-[0m[[0m[31merror[0m] [0m[0m enclosing object SecondRemoteSystem is not a subclass of [0m
-[0m[[0m[31merror[0m] [0m[0m class ActorSelection in package actor where target is defined[0m
-[0m[[0m[31merror[0m] [0m[0m	println(s"Worker actor path is ${remoteactor.path}")[0m
-[0m[[0m[31merror[0m] [0m[0m	                                             ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m

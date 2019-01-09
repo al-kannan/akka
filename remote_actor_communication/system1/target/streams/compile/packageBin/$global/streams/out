@@ -1,0 +1,21 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hadoop/sbt_workspace/akka/akka/remote_actor_communication/system1/target/scala-2.11/akka_2.11-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RemoteActor$Work$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/akka/remote_actor_communication/system1/target/scala-2.11/classes/RemoteActor$Work$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RemoteActor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/akka/remote_actor_communication/system1/target/scala-2.11/classes/RemoteActor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RemoteActor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/akka/remote_actor_communication/system1/target/scala-2.11/classes/RemoteActor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	system1$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/akka/remote_actor_communication/system1/target/scala-2.11/classes/system1$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RemoteActor$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/akka/remote_actor_communication/system1/target/scala-2.11/classes/RemoteActor$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	system1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/akka/remote_actor_communication/system1/target/scala-2.11/classes/system1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RemoteActor$Work.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/akka/remote_actor_communication/system1/target/scala-2.11/classes/RemoteActor$Work.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/akka/remote_actor_communication/system1/target/scala-2.11/classes/application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	system1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hadoop/sbt_workspace/akka/akka/remote_actor_communication/system1/target/scala-2.11/classes/system1$.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
