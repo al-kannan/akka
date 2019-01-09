@@ -116,6 +116,8 @@ I also tried with same system name, made no difference
 
 Finally I tried to connect two nodes to a third node, third node received messages from both, all had the same actor system name
 
+Note: As soon as we send a message, two systems establish a link relationship and start communiting heartbeat, if the second is killed, then first system marks the second system in 'Gated' state, when the second system is restated and sends a message then first system restores the link state to 'Active'...clustering happens !!
+
 
 
 
