@@ -91,7 +91,7 @@ In this example:
 - When the actor is shutdown due to system shut down even tnen it recovers
 
 
-### Remote Actor Communication
+### Remote Actor Lookup
 Actor Systems can be created in local mode or in remote mode. In remote mode each actor system need to run on a separate port same machine or same port different machine. Actor system name can be same or different, it does not matter. 
 
 Typically same code will be deployed on all nodes. 
@@ -119,5 +119,14 @@ Finally I tried to connect two nodes to a third node, third node received messag
 Note: As soon as we send a message, two systems establish a link relationship and start communiting heartbeat, if the second is killed, then first system marks the second system in 'Gated' state, when the second system is restated and sends a message then first system restores the link state to 'Active'...clustering happens !!
 
 
+### Remote Actor Creation
+Actor systems can run on different node. 
 
+One system can request another system on a different node to create an actor. 
+
+What I have done here is, created system1 and system2 on two different nodes, system1 will ask system2 to create an actor in system2 node. The actor class need to be on both systems, but when the actor is created it is getting created with the actor version that is residing on system2 (i.e., no class transport from system1). Typically we should not have class version differences in this use case. 
+
+Once an actor is created in system2, system1 gets actorRef and can use it to send messages. 
+
+One part confused me is "when I printed self address of the actor which is running in system2 but it printed with system1 address and port number"...I have no idea about the implementation reason!!!
 
