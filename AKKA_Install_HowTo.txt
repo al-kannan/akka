@@ -1,0 +1,93 @@
+Download JAVA 8 to your laptop from 
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+Do SFTP to your Amazon Linux server
+
+Sign on to your EC2
+
+sudo su
+
+Move the .gz file to /opt
+
+tar xvzf *.gz
+
+Ensure /opt/jda1.8.0_201 folder is similar with diffrent sub release
+
+Modify the /root/.bashrc with following path
+export PATH=/opt/jdk1.8.0_201/bin/:$PATH
+
+#Download SCALA
+
+SCALA_VERSION="2.11.7"
+
+wget http://downloads.typesafe.com/scala/${SCALA_VERSION}/scala-${SCALA_VERSION}.tgz
+tar -xzvf scala-${SCALA_VERSION}.tgz
+#rm -rf scala-${SCALA_VERSION}.tgz
+echo "export SCALA_HOME=/home/ec2-user/scala-${SCALA_VERSION}" >> ~/.bashrc
+echo "export PATH=$PATH:/home/ec2-user/scala-${SCALA_VERSION}/bin" >> ~/.bashrc
+source ~/.bashrc
+
+#SBT
+curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo
+sudo yum install sbt
+
+echo "export PATH=$PATH:/usr/share/sbt/bin" >> ~/.bashrc
+
+#Below command will take some time on the first run
+sbt 
+
+from the home directory /home/ec2-user create sbt_home directly
+
+create following build.sbt file
+name := "TestProject"
+version := "1.0"
+scalaVersion := "2.11.7"
+resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
+libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.5.19"
+
+cd sbt_home
+
+mkdir -p src/main/scala
+
+
+-------------------------------------------------------------------------------------------------------
+vi src/main/scala/helloworld.scala with the following lines and run sbt run, you should see the output
+-------------------------------------------------------------------------------------------------------
+import akka.actor._
+case class hello(Msg: String)
+case class hallo(Msg: String)
+class hellowworldactor extends Actor with ActorLogging {
+	def receive = { 
+		case hello(msg)  => println("hello") 
+		case hallo(msg)  => println("hallo") 
+		case _ => println("Hello World from Actor") 
+		}
+}
+object helloworld extends App {
+
+	println("Hello World Before Actor System")
+	val system = ActorSystem("hellowworld")
+	println("Hello World After Actor System")
+
+	val actorref = system.actorOf(Props[hellowworldactor], "hellowworldactor")
+
+	println("Hello World After Starting the Actor")
+
+	actorref ! "Test"
+	actorref ! "Test2"
+
+	println("Hello World After Sending Actor Message ")
+
+	//Second Actor System 
+	println("Hello World Before Actor System 2")
+	val system2 = ActorSystem("hellowworld")
+	println("Hello World After Actor System 2")
+	val actorref2 = system2.actorOf(Props[hellowworldactor], "hellowworldactor")
+	actorref2 ! "Test"
+
+	actorref ! PoisonPill
+	actorref2 ! PoisonPill
+
+	system.terminate
+	system2.terminate
+}
