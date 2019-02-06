@@ -1,0 +1,87 @@
+AKKA is an open-source project toolkit available in Scala and Java
+
+AKKA support Actor Programming Model
+
+You can treat application module as an Actor System with many actors as programming units
+
+These actors act upon received messages, logic will be based on message
+
+Actors are independent programming units, you cannot create an actor object and execute its methods
+
+Actors are strictly communicated via its received messages
+
+Actors are non blocking, asyncronous, no pooling, error isolation, elastic which is ideal for cloud
+
+Actors can be scalaed horizontally and vertically
+
+Actors can create child actors, can instatiate other tranditional scala objects
+
+Actor model supports Test Driven Development
+
+Actor can be tested syncronously and asyncronously
+-- Single Threaded Unit Testing (syncronously)
+-- Multi Threaded Unit Testing (asyncronously)
+-- Multi JVM Unit Testing for Cluster
+
+Actors can receive and reply back to messages to the sender
+
+Actor that create child actor becomes supervisor for the child actors
+
+When Actors fail, its supervisor can have different supervision strategy
+--When Actors fail, you have a choice to Restart, Resume, Stop options
+Above options can be executed on errored actor or all actors supervisor supervises
+--OneForOneStrategy or AllForOneStrategy
+
+Actors have life cycle (like triggers)
+-- preStart, preReStart, PostStop, PostRestart
+
+Actors must have receive method declared to process incoming messages
+
+Alternatively there is also Future feature that is similar to Actor asyncronous execution of commands
+-- Actors provide a mechanism to build a system out of concurrent objects
+-- Futures provide a mechanism to build a system out of asynchronous functions
+
+Futures are composable with other Futures, so you can pack them in a single call
+
+AKKA can be deployed on multiple nodes with either with remoting module or cluster module
+
+AKKA can also be designed with filter actors and pipe actors for step by step processing
+
+AKKA provides built in routing methods with load balancing options, round robin option, broadcast, broadcast with first response pattern
+-- These routing methods work locally and on cluster deployments
+
+AKKA also has Event Stream Processing where actors can be linked in a graph layout
+
+AKKA also has reliable proxy methods, toolkit provides client/server type configuration where message are tracked
+
+AKKA also supports Finite State Machine where actors can have multiple states and each state can process same message differenly
+
+AKKA also has external systems to communiate messages to Actors
+
+AKKA support Apache Camel integration framework where various types of formats can be support by just configuration (JSON2XML etc)
+
+AKKA support back pressume enabled Streaming where producer and consumer can process stream of instructuion with back pressume control
+
+AKKA cluster is a framework for joining multiple nodes and there can be Actor to can act as cluster monitor and start actors
+-- Leveraging Cluster is by application design that we have to do
+
+Actor can also hold state in memory and save such state to a file in the local file system or distributed database like casendra
+-- Called Actor Persistance
+
+AKKA provides metrics to know message entering into a queue, processing by an actor and removing from the queue
+-- For performance improvement
+
+AKKA in the future allow Typed message, at present it also untyped message only 
+
+AKKA in the future might provide persistance over multiple nodes by Distributing in-memory state (called AKKA Distributed Data)
+-- Also called Conflict Free Replicated Data Types (CRDT's)
+
+
+
+ 
+
+
+
+
+
+
