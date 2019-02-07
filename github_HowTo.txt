@@ -1,0 +1,20 @@
+To install git on AWS EC2
+yum install git
+
+To clone repository
+cd <whatever directory>
+git clone <get the url from the github repo>
+
+To add more files create those files in the local repo directory
+
+Following will add the changes to the local repo
+git add .
+
+Following will commit with a message
+git commit -m "change description"
+
+Following will upload to github repo online
+git push 
+enter al-kannan as the repo name
+enter its password
+
