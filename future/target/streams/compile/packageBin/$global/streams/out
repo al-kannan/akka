@@ -1,0 +1,21 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/ec2-user/sbt_home/future/target/scala-2.11/testproject_2.11-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futureexample$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/future/target/scala-2.11/classes/futureexample$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futureexample$$anonfun$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/future/target/scala-2.11/classes/futureexample$$anonfun$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futureexample$$anonfun$4$$anonfun$apply$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/future/target/scala-2.11/classes/futureexample$$anonfun$4$$anonfun$apply$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futureexample$$anonfun$4$$anonfun$apply$2$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/future/target/scala-2.11/classes/futureexample$$anonfun$4$$anonfun$apply$2$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futureexample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/future/target/scala-2.11/classes/futureexample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futureexample$$anonfun$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/future/target/scala-2.11/classes/futureexample$$anonfun$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futureexample$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/future/target/scala-2.11/classes/futureexample$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futureexample$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/future/target/scala-2.11/classes/futureexample$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futureexample$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/future/target/scala-2.11/classes/futureexample$delayedInit$body.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
