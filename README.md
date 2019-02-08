@@ -130,3 +130,12 @@ Once an actor is created in system2, system1 gets actorRef and can use it to sen
 
 One part confused me is "when I printed self address of the actor which is running in system2 but it printed with system1 address and port number"...I have no idea about the implementation reason!!!
 
+
+### Parallelism using Future
+Actor systems is one way to do parallel processing, but sometimes Future can be used to run parallel functions by leveraging multiple CPUs/Java Threads
+
+In this example I simply created a function that will sleep for 5 seconds and ran it one at a time for three times, it took 15 seconds, by Future with 4 CPU machine, it took only 5 seconds
+
+What is the difference between Future versus Actor? 
+Future is for running functions in parallel and freely combining them whereas Actors are great for processing many messages, capturing state, and reacting with different behavior based on the state they are in and the messages they receive.They are resilient objects that can live on for a long time even when problems occur, using monitoring and supervision
+
