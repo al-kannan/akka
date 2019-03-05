@@ -1,0 +1,79 @@
+import akka.cluster.Cluster
+import akka.cluster.ClusterEvent._
+import com.typesafe.config.ConfigFactory
+import akka.cluster.Member
+import akka.actor.{ ActorLogging, Actor, ActorRef, ActorSystem, Props, RootActorPath }
+import scala.concurrent.duration._
+import scala.collection.mutable.Map
+
+case class file_check (Msg: String)
+
+case class process_tx (Msg: String)
+case class ready_ack (Msg: String)
+
+class NodeCoordinator extends Actor with ActorLogging {
+  def receive = {
+  	case ready_ack(msg) => log.info("Yes Ready")
+	case process_tx(msg) => log.info("Process Tx : {} ", msg)
+	case _ => log.info("Message Unknown")
+	}
+}
+	
+
+class ReceptionistActor extends Actor with ActorLogging {
+
+  import context.dispatcher
+
+  val cluster = Cluster(context.system)
+  var nodes = Set.empty[Member]
+  val node_map = Map.empty[Member, String]
+
+  // subscribe to cluster changes, re-subscribe when restart
+  override def preStart(): Unit = {
+    cluster.subscribe(self, initialStateMode = InitialStateAsEvents, classOf[MemberEvent], classOf[UnreachableMember])
+  }
+  override def postStop(): Unit = cluster.unsubscribe(self)
+
+  context.system.scheduler.schedule(10.seconds, 10.seconds, self, file_check("Check for New File"))
+
+  def receive = {
+    case MemberUp(member) =>
+      log.info("Member is Up: {}", member.address)
+      nodes = nodes + member
+      //log.info("Printing it from Set: {}", nodes.head.address)
+      //log.info("Printing it from Set: {}", nodes)
+      //log.info("Printing it from Set: {}", nodes.size)
+      val fn : Member => Unit = x => { log.info("Printing address {}", x.address) }
+      nodes.foreach(fn)
+      //context.actorSelection(RootActorPath(member.address) / "user" / "NodeCoordinator") ! ready_ack("Testing")
+      val nc_msg : Member => Unit = x => { context.actorSelection(RootActorPath(x.address) / "user" / "NodeCoordinator") ! ready_ack("Testing") }
+      nodes.foreach(nc_msg)
+      node_map += (member -> "None")
+      node_map foreach {case (key, value) => log.info("Key={} Value={}", key.address, value)}
+
+
+    case UnreachableMember(member) =>
+      log.info("Member detected as unreachable: {}", member)
+    case MemberRemoved(member, previousStatus) =>
+      log.info(
+        "Member is Removed: {} after {}",
+        member.address, previousStatus)
+	nodes = nodes - member
+	node_map -= member
+    case file_check(msg) =>  
+	log.info("No files arrived")
+    case _: MemberEvent => // ignore
+  }
+}
+
+
+object ClusterSystem extends App {
+
+	val system = ActorSystem("ClusterSystem")
+
+	val nc = system.actorOf(Props[NodeCoordinator], "NodeCoordinator")
+
+	val clusteractor = system.actorOf(Props[ReceptionistActor], "ReceptionistActor")
+
+	println(s"Worker actor path is ${clusteractor.path}")
+}

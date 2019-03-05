@@ -1,0 +1,21 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/ec2-user/sbt_home/AKKA/helloworld_testing/target/scala-2.11/akka_2.11-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	hellowworldactor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/AKKA/helloworld_testing/target/scala-2.11/classes/hellowworldactor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	helloworld$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/AKKA/helloworld_testing/target/scala-2.11/classes/helloworld$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	hello$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/AKKA/helloworld_testing/target/scala-2.11/classes/hello$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	hallo$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/AKKA/helloworld_testing/target/scala-2.11/classes/hallo$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	helloworld.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/AKKA/helloworld_testing/target/scala-2.11/classes/helloworld.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	helloworld$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/AKKA/helloworld_testing/target/scala-2.11/classes/helloworld$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	hellowworldactor$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/AKKA/helloworld_testing/target/scala-2.11/classes/hellowworldactor$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	hallo.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/AKKA/helloworld_testing/target/scala-2.11/classes/hallo.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	hello.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ec2-user/sbt_home/AKKA/helloworld_testing/target/scala-2.11/classes/hello.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

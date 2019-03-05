@@ -130,6 +130,8 @@ Once an actor is created in system2, system1 gets actorRef and can use it to sen
 
 One part confused me is "when I printed self address of the actor which is running in system2 but it printed with system1 address and port number"...I have no idea about the implementation reason!!!
 
+Note: Create remote actor is based on application.conf file which says where to create the actor...in which node
+
 
 ### Parallelism using Future
 Actor systems is one way to do parallel processing, but sometimes Future can be used to run parallel functions by leveraging multiple CPUs/Java Threads

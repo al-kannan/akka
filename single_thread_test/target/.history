@@ -1,0 +1,20 @@
+testOnly testdriven.SilentActor01TESt
+testOnly testdriven.SilentActor01Test
+testOnly testdriven.SilentActorTest
+testOnly testdriven.SilentActorTest3
+testOnly testdriven.SilentActorTest1
+quit
+exit
+testOnly testdriven.SilentActorTest1
+testOnly testdriven.SilentActorTest2
+testOnly testdriven.SilentActorTest3
+testOnly testdriven.SilentActorTest1
+testOnly testdriven.SilentActor1
+testOnly testdriven.SilentActorTest1
+testOnly testdriven.SilentActorTest2
+testOnly testdriven.SilentActorTest3
+exit
+testOnly testdriven.SilentActorTest1
+testOnly testdriven.SilentActorTest2
+testOnly testdriven.SilentActorTest3
+exit

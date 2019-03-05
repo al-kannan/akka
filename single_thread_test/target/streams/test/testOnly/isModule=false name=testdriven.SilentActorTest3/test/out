@@ -1,0 +1,3 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mSilentActorTest3:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mA Silent Actor[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- must change internal state when it receives a message, multi[0m[0m

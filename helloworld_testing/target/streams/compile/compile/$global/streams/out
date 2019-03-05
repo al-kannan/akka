@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/hadoop/sbt_workspace/akka/hellowworld/src/main/scala/helloworld.scala:39:9: value shutdown is not a member of akka.actor.ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m	system.shutdown[0m
+[0m[[0m[31merror[0m] [0m[0m	       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/hadoop/sbt_workspace/akka/hellowworld/src/main/scala/helloworld.scala:40:10: value shutdown is not a member of akka.actor.ActorSystem[0m
+[0m[[0m[31merror[0m] [0m[0m	system2.shutdown[0m
+[0m[[0m[31merror[0m] [0m[0m	        ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
