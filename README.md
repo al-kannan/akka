@@ -141,3 +141,16 @@ In this example I simply created a function that will sleep for 5 seconds and ra
 What is the difference between Future versus Actor? 
 Future is for running functions in parallel and freely combining them whereas Actors are great for processing many messages, capturing state, and reacting with different behavior based on the state they are in and the messages they receive.They are resilient objects that can live on for a long time even when problems occur, using monitoring and supervision
 
+### Parallelism using AKKA Cluster
+AKKA framework comes with a powerful cluster toolkit. Many of the cluster management is taken care by the toolkit. 
+
+When we code in PLSQL or any procedural language we do not care about where it runs, because it aways runs within the database and in the local machine. Whereas in AKKA we can create an application that will run on a cluster of machines
+
+Each machine need to have Java Run Time installed, AKKA libraries installed and our application code deployed. Along with this each node (virual machine) should have application.conf file that will have cluster seed node info to join the cluster
+
+Once we have this setup the actor system can be started with the same name, this will start cluster communication and there will be a leader node and other nodes joining. 
+
+Once cluster is formed we can launch actors locally and on all remote machines and commnication between actors can be carried out by sending messages. This actor structure can be master-with-many-child, peer-to-peer, ring or a complex mesh. 
+It can also be a fleet mode where there can be millions of actors that will servr for an entity, for example in a inventory system for several stores there can be an actor for each store-item combination waiting to process inventory transactions
+
+For Proof-of-concept I have created master-many-child type system where seed node will have a receiptionist that will monitor cluster events and track nodes. Also it will wake up periodically to check for inventory transaction file, if one exists it will process line by line and start store-item actor across nodes in a round-robin style, once the file is processed, all actors will be shut down
