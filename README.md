@@ -14,7 +14,7 @@
 ![](images/Page12.png)
 
 
-## Summary
+## Coding Comments Summary
 I have created few small programs to demonstrate AKKA concepts and features
 
 ### Hello World
