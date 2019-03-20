@@ -4,7 +4,7 @@
 		module="akka_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20190109164026"
+		publication="20190320160629"
 	>
 		<description>
 		akka
