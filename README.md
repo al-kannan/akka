@@ -4,6 +4,7 @@
 ![](images/Page2.png)
 #### Below Image sourced from https://blog.scottlogic.com/2014/08/15/using-akka-and-scala-to-render-a-mandelbrot-set.html
 ![](images/ActorSystem.png)
+#### Below Image sourced from https://www.scnsoft.com/blog/akka-actors-for-microservices
 ![](images/ParentChildActorModel.png)
 ![](images/Example1Code.png)
 ![](images/Example1Result.png)
